@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-MAN UTD | WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    
+        
+            
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/ac1.png" width="100%">
+
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onClick="login()">LogIn</span>
+                        <span onClick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm" action="connect.php"  method="post">
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Username" name="Username">
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" name="Password">
+                        </div>
+                    
+                        
+                        <button type="submit" class="btn">Log in</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="RegForm"action="connect.php"  method="post">
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Username" name="Username">
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email" name="Email">
+                        </div>
+                        
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" name="Password">
+                        </div>
+                        
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+    
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/PA.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/badge1.jpg">
+                <p>Our purpose is to sustainably make the pleasure and
+                 Benefits of sports accessible to Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Posts</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023</p>
+    </div>
+</div>
+
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var ReginForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translatex(0px)";
+        LoginForm.style.transform = "translatex(0px)";
+        Indicator.style.transform = "translatex(100px)";
+    }
+
+    function login(){
+        RegForm.style.transform = "translatex(300px)";
+        LoginForm.style.transform = "translatex(300px)";
+        Indicator.style.transform = "translatex(0px)";
+    }
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+ 
